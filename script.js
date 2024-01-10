@@ -16,7 +16,7 @@ let highscore = 0
 
 function checknumber(){
 
-  if(parseInt(inputnum.value) > 20 ){
+  if(parseInt(inputnum.value) > 20 || inputfield.value === ""){
     window.alert("Invalid Response, Number should be in the range 1 to 20")
   }
 
@@ -49,6 +49,8 @@ function checknumber(){
     window.alert('Game Over')
     location.reload()
   }
+
+
 }
 
 function resetgame(){
